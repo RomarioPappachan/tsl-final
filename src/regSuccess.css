@@ -1,0 +1,238 @@
+.success-page-container {
+    background-image: url("../images/back-success.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.success-logo {
+    width: 80%;
+}
+
+.success-head {
+    text-align: center;
+}
+
+.success-title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.success-content {
+    line-height: 1.5;
+    font-size: 1rem;
+    /* font-weight: bold; */
+    font-size: 1.1rem;
+    color: #576574;
+}
+
+
+.whatsapp-message {
+   /* margin: 15px; */
+   padding: 1.5% 5%;
+   text-align: center;
+   font-size: 1.5rem;
+   font-weight: 600;
+}
+
+.whatsapp-link {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    /* background-image: url("./images/ripple.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50px;
+    position: relative;
+}
+.whatsapp-icon {
+    color: #128C7E;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3vh;
+}
+
+
+/* Name List Section */
+
+
+.success-list-wrap {
+    padding-bottom: 5px;
+}
+
+.success-list-row {
+    font-size: 1.2rem;
+    height: 7vh;
+    text-align: center;
+    margin: 0 0 8px 0;
+}
+
+.success-list-row:first-of-type {
+    /* background-color: black; */
+    background-image: linear-gradient(to right,rgba(1,1,1,0.2%),transparent,grey,grey,grey);
+    color: white;
+}
+
+.success-list-column {
+    display: flex;
+    align-items: center;
+}
+
+.success-list-number {
+    height: 5vh;
+    width: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 0 16px 0 16px;
+    margin-right: 5px;
+}
+
+.success-list-row:first-of-type .success-list-number {
+    background-color: white;
+    color: black;
+}
+
+.success-list-name {
+    font-size: 1.8rem;
+    font-weight: 500;
+    /* color: black; */
+}
+
+
+
+
+
+
+
+/* Footer Section */
+
+
+.footer1-container-wrapper {
+    position: fixed;
+    bottom: 0;
+    padding: 2% 6%;
+    margin: 3px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.74);
+    color: white;
+}
+
+.footer1 .footer1-sub-grp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.footer1 .footer1-sub-grp .footer1-head {
+    font-weight: 400;
+}
+  
+.footer1 .footer1-sub-grp .footer1-update {
+    font-weight: bold;
+}
+
+
+
+
+/* ------------------------Media breakpoints----------------------- */
+
+
+@media only screen and (max-width: 600px) {
+    
+    /* .footer1-container-wrapper {
+        position: relative;
+    } */
+
+    .success-logo-column {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .success-logo {
+        width: 50%;
+    }
+
+    .success-title {
+        font-size: 1.5rem;
+    }
+
+    .success-content {
+        font-size: 1rem;
+    }
+
+    /* whatsapp message */
+
+    .whatsapp-message {
+        font-size: 1rem;
+        line-height: 2.5;
+        margin: 0;
+    }
+
+    .whatsapp-link {
+        width: 30px;
+        height: 30px;
+        padding: 0 30px;
+    }
+
+    .whatsapp-icon {
+        width: 50px;
+        height: 50px;
+        top: 2px;
+    }
+    
+
+    /* Success List */
+    .success-list-row {
+        font-size: 1.3rem;
+        height: 7vh;
+        text-align: center;
+        margin: 0 0 5px 0;
+        padding-left: 40%;
+    }
+    
+    .success-list-row:first-of-type {
+        background-image: linear-gradient(to right,rgba(1,1,1,0.2%),grey,grey,grey,grey);
+    }
+    .success-list-name {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    
+
+    /* Footer */
+    
+    .footer1-container-wrapper{
+        padding: 4% 6%;
+        /* position: absolute;
+        bottom: 0;
+        left: 0; */
+    }
+
+    .footer1 .footer1-sub-grp {
+        text-align: center;
+    }
+
+    .footer1 .footer1-sub-grp .footer1-head {
+        font-size: 0.8rem;
+    }
+      
+    .footer1 .footer1-sub-grp .footer1-update {
+        font-size: 0.9rem;
+    }
+
+
+}

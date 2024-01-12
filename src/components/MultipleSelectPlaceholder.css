@@ -1,0 +1,11 @@
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    
+    height: 3.1rem;
+}
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root.Mui-selected {
+    background-color: rgb(69, 61, 65, 73%) !important;
+    color: white;
+}

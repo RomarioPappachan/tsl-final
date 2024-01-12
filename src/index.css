@@ -1,0 +1,979 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-appearance: menulist;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  outline:none;
+}
+
+select[multiple] {
+  overflow-y: auto; /* Add a scrollbar when needed */
+  display: flex;
+  align-items: center;
+}
+
+option {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-main-container {
+  background-image: url("../images/step1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  /* overflow-y:hidden; */
+}
+
+.home-language-select-button {
+  position: absolute;
+  bottom: 30vh;
+  right: 8vw;
+  background-image: linear-gradient(to bottom, #081e59, #000000);
+  border: 1px solid white;
+  color: white;
+  border-radius: 8px;
+  height: 8vh;
+  width: 12vw;
+  font-size: 1.5rem;
+
+  text-indent: 30px hanging;
+}
+
+.home-language-select-button:hover {
+  background-image: linear-gradient(to bottom, #000000, #081e59);  
+  transition: .3s ease-in-out;
+  border: 1px solid #081e59;
+}
+
+.proceed-button{
+  position: absolute; 
+  bottom: 15vh;
+  right: 20vw;
+  background-image: linear-gradient(to bottom, #081e59, #000000);
+  border: 1px solid white;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  height: 8vh;
+  width: 12vw;
+  text-align: center;
+}
+
+.proceed-button:hover {
+  background-image: linear-gradient(to bottom, #000000, #081e59);  
+  transition: .3s ease-in-out;
+  border: 1px solid #081e59;
+}
+
+
+
+/* Sliding Container Section */
+
+
+.parent-container {
+    /* background-image: url("./step1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    width: 100vw;
+    min-height: 100%;
+    background: transparent;
+    background-color: transparent;
+    
+}
+
+
+/* .login-container {
+  min-height: 100%;
+} */
+
+.slide-column-img {
+   /* background: transparent; */
+   /* background-color: rgba(0,0,0,0.2); */
+   min-height: 100%;
+}
+
+/* .slide-column-form-container {
+    background-image: url("../images/background.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+    opacity:0.5
+} */
+
+.form-parent-container {
+    height: auto;
+}
+
+.audio-section {
+    background-image: linear-gradient(to top, black, #5f5f5f);
+    height: 3.7rem;
+    width:100%;   
+}
+
+.audio-section > section {
+    background-color: black;
+    color: white;
+    height: 4vh;
+}
+
+
+.reg-language-select-button {
+  height: 4vh;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  border: 2px solid white;
+  text-align: left;
+  width: 95%;
+  padding: 0;
+}
+
+.parent-heading {
+    color: black;
+    font-size: 1.3rem;
+    margin: 2% auto 0;
+}
+
+.slide-column-form-container {
+  background-image: url("../images/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40%;
+  text-align: center;
+}
+
+.form-container-wrapper {
+    padding: 0 6%;
+}
+
+.form-input-container {
+    height: 3.1rem;
+    color: black;
+}
+
+.form-input-container-textarea {
+  min-height: 3.1rem;
+  color: black;
+  border: none;
+}
+
+textarea {
+  border: none;
+  background-color: white;
+  resize: none;
+  outline: none;
+}
+
+textarea::placeholder {
+  padding: 10px 5px 5px;
+}
+
+::placeholder{
+    color: black;
+    font-size: 1rem;
+}
+
+.validate{
+  border:none;
+  border:2px solid #e74c3c !important;
+}
+input[type="text"],select{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-left: 20px;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none !important;
+}
+.form-input-field {
+    border-style: none;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.50) !important;
+    /* box-shadow: 1px 7px 10px 2px rgba(0, 0, 0, 0.26); */
+}
+
+/* .form-input-field:focus {
+    border: 2px solid black;
+} */
+
+
+
+
+
+/* dob input style override material-ui date picker package*/
+
+.css-z3c6am-MuiFormControl-root-MuiTextField-root {
+  background-color: white;
+  width: 100%;
+  border: none !important;
+  border-radius: 5px;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  /* max-height: 2vh; */
+  border: none;
+}
+
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+  box-shadow: none !important;
+}
+
+.MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-inputAdornedEnd.css-1uvydh2 {
+  box-shadow: none !important;
+}
+
+
+/* End of date picker */
+
+
+
+
+
+.gender-radio-button {
+    size: 3vh;
+}
+
+.country-flag-image {
+  max-width: 6vh;
+}
+
+.country-code {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.phone-number {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: none !important;
+    box-shadow: 14px 1rem 2.5rem rgba(93, 93, 93, 0.5) !important;
+    
+}
+
+
+.reference-name {
+  font-size: 0.9rem;
+}
+
+
+.special-remarks {
+  padding-left: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+/* .special-remarks::placeholder {
+  padding-left: -10px;
+} */
+
+.remarks-count {
+  color: #2f3542; 
+  margin-right: 14px;
+}
+
+
+.submit {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.submit:hover {
+    background-color: black;
+}
+
+/* Footer Section */
+
+
+.color-red{
+  color:red;
+}
+.footer-container-wrapper {
+    padding: 0% 6%;
+    margin: 5% 1%;
+}
+
+.footer .footer-sub-grp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.footer .footer-sub-grp .footer-head {
+    font-weight: 400;
+}
+  
+.footer .footer-sub-grp .footer-update {
+    font-weight: bold;
+}
+
+
+
+
+/* -------------------Sliding Animation------------ */
+
+/* .login-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%; Adjust width as needed
+  background-color: rgb(255, 255, 255);
+  transition: transform 1s; Use a smooth transition effect
+  transform: translateX(100%); Initially off-screen to the right
+}
+
+.show-login {
+  transform: translateX(0); Move on-screen
+} */
+
+
+
+
+
+
+
+
+
+/* -----------------------Popup Styles----------------------- */
+
+  .enableBlur {
+    filter: blur(12px);
+    -webkit-filter: blur(4px);
+  }
+
+  /* .disableBlur {
+    filter: blur(0);
+    z-index: 12;
+  }   */
+
+  .hide {
+    display: none !important;
+  }
+
+
+
+  .popup-container-wrapper {
+    background-color: rgba(0, 0, 0, 0.4);
+    /* background-color: rgb(255, 255, 255, 0.8); */
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100%;  
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    backdrop-filter: blur(2px);
+}
+
+.pop-up {
+  background-color: white;
+  border-radius: 19px;
+  height: 35%;
+  width: 30%;
+  text-align: center;
+}
+
+.pop-head {
+    background-color: black;
+    /* background-image: linear-gradient(to top, black, #515151); */
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 2%;
+    height: 25%;
+}
+
+.pop-content {
+   height: 40%;
+   margin: 0;
+}
+
+.pop-content > p {
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.pop-content > span {
+    font-size: 0.9rem;
+    margin: 0 auto;
+}
+
+.pop-btn {
+    height: 35%;
+}
+
+.ok, .otp-resend {
+  width: 7rem;
+  height: 2.5rem;
+  margin-bottom: 5%;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 1px 7px 10px 9px rgba(0, 0, 0, 0.26);
+}
+
+.ok-otp{
+  background-color: rgb(0, 0, 0);
+  color:white;
+}
+.ok:hover {
+  background-color: black;
+  color: white;
+}
+
+.edit{
+  width: 7rem;
+  height: 2.5rem;
+  margin-bottom: 5%;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  box-shadow: 1px 7px 10px 9px rgba(0, 0, 0, 0.26);
+  color: white;
+}
+
+.edit:hover {
+  background-color: white;
+  color: black;
+}
+
+
+/* OTP Popup Styles */
+
+
+.otp-pop-head {
+  background-color: black;
+  position: relative;
+}
+
+.otp-pop-content {
+  color: black;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.otpCloseButton {
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  width: 4vh;
+  height: 4vh;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.otpCloseButton:hover {
+  background-color: #e7e7e7;
+  color: #000000;
+}
+
+.otp-field-container {
+  width: 60%;
+  min-height: 45px;
+}
+
+.otp-input-field {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.otp-input-field::-webkit-input-placeholder {
+  text-align: center;
+}
+.otp-input-field:-moz-placeholder {
+  text-align: center;
+}
+
+
+.otp-input-field:focus {
+    border: none;
+    border: 4px solid black; 
+}
+
+.otp-resend:hover {
+  width: 7rem;
+  height: 2.5rem;
+  margin-bottom: 5%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 1px 7px 10px 9px rgba(0, 0, 0, 0.26);
+  background-color: #5f5f5f;
+  color: white;
+}
+
+.otp-submit {
+    background-color: black;
+}
+
+.otp-submit:hover {
+    background-color: #fafcfd;
+    color: blacks;
+}
+
+.show-error {
+  display: block;
+  color: red;  
+  font-size:0.9rem;
+  font-weight: 600;
+  text-align: left;
+  background-color: hsla(360, 100%, 100%, 0.25);
+  border-radius: 2px;
+}
+
+.hide-error {
+  display: none;
+}
+
+
+/* --------Success card Styles--------   */
+
+.reg-success-card {
+  background-image: url('../images/reg-success-card-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 19px;
+  height: 260px;
+  width: 30%;
+  text-align: center;
+}
+
+.reg-success-card-head {
+  margin: 0;
+  padding: 3% 0 0;
+}
+
+.reg-card-number {
+  text-align: left;
+  color: white;
+}
+
+.reg-card-number p {
+  font-size: 0.6rem;
+  margin: 0;
+}
+
+.reg-card-number h1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.reg-card-logo {
+  width: 10%;
+}
+
+.reg-success-card-content {
+  position: relative;
+}
+
+.chip {
+  position: absolute;
+  left: 3%;
+  top: 10%;
+  width: 10%;
+}
+
+.reg-success-card-content div {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.reg-card-star-life-logo {
+  width: 22%;
+  margin: 0;
+  padding: 0;
+}
+
+.reg-card-contact-number {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+.reg-card-success-message {
+  color: #f4e893;
+  font-size: 1.3rem;
+  margin: 3px 0;
+}
+
+.success-page-link {
+  padding: 0.5% 8%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.success-page-link:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid #e7e7e7;
+  transition: 0.5s;
+}
+
+.reg-success-card-footer {
+  margin: 0;
+  padding: 0 0 3%;
+}
+
+.card-holder-group {
+  text-align: left;
+  color: white;
+}
+
+.card-holder-name p {
+  font-size: 0.6rem;
+  margin: 0;
+}
+
+.card-holder-name h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+  
+.reg-card-validity p{
+  font-size: 0.6rem;
+  margin: auto;
+  color: #ffffff;
+}
+
+
+
+
+
+  
+ /* -------------------------Media Queries for popups----------------------- */
+  
+ @media only screen and (max-width: 1400px) {
+
+  .pop-up {
+      height: 40%;
+      width: 50%;
+  }
+
+}
+
+@media only screen and (max-width: 1080px) {
+
+  .pop-up {
+      height: 40%;
+      width: 50%;
+  }
+
+  .reg-success-card {
+    width: 45vw;
+    height: 35vh;
+  }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .pop-up {
+      height: 40%;
+      width: 50%;
+  }
+
+  .reg-success-card {
+    width: 60vw;
+    height: 40vh;
+  }
+
+}
+
+
+.popuptoggle{
+  overflow: hidden;
+}
+@media only screen and (max-width: 578px) {
+
+  .popup-container-wrapper {
+    background-color: rgba(0,0,0, 0.6);
+    /* background: transparent; */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 160vh;
+    /* max-height: 200vh;   */
+    /* height: 100%; */
+    z-index: 1000;
+    position: absolute;
+   
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+  .pop-up {
+      height: 280px; /*in pixel*/
+      width: 95%;
+      position: absolute;
+      top : 30vh;
+  }
+
+  .pop-head {
+      font-size: 1rem;
+  }
+
+ .pop-content > p {
+     color: black;
+     font-size: 0.8rem;
+     font-weight: 600;
+     margin: 0 auto;
+ }
+ 
+ .pop-content > span {
+     font-size: 0.7rem;
+     margin: 0 auto;
+ }
+
+  .otp-field-container {
+    width: 80%;
+  }
+
+  .reg-success-card {
+    width: 95vw;
+    height: 230px;   /*in pixel*/
+    position: absolute;
+    top: 30vh;
+  }
+
+  .reg-card-number p {
+    font-size: 0.5rem;
+  }
+  
+  .reg-card-number h1 {
+    font-size: 0.9rem;
+  }
+
+  .reg-card-contact-number {
+    font-size: 0.6rem;
+  }
+  
+  .reg-card-success-message {
+    font-size: 1.1rem;
+  }
+
+  .card-holder-name p {
+    font-size: 0.5rem;
+  }
+  
+  .card-holder-name h2 {
+    font-size: 0.9rem;
+  }
+    
+  .reg-card-validity p{
+    font-size: 0.5rem;
+  }
+
+}
+
+
+
+
+
+  
+
+
+  /* ----------------Media breakpoints for registration page--------------------- */
+
+
+/* ---------Tabs and mobiles----------- */
+
+@media only screen and (max-width: 1080px) {
+  
+  .login-container {
+    height: 100vh;
+  }
+
+  .slide-column-form-container {
+    width: 100vw;
+    height: 100%;
+}
+
+  .parent-container {
+      width: 100%;
+      height: 100vh;
+  }
+
+  .slide-column-img {
+      background-color: none;
+      background-image: url("../images/step1.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* object-fit: cover; */
+      width: 100vw;
+      height: 45vw;
+  }
+
+  .form-container-wrapper, .footer-container-wrapper {
+      padding: 0;
+  }
+
+  .footer-container-wrapper {
+      padding: 0;
+      margin: 6% 0;
+  }
+
+}
+
+/* Intermediate response for size between Laptop and Tablet */
+
+@media only screen and (max-width: 1080px) and (min-width: 768px) {
+
+  .login-container{
+    height: 100vh;
+  }
+
+  .slide-column-form-container {
+      padding: 2% 5%;
+      background-color: white;
+      text-align: center;
+      margin: auto;
+      width: 100vw;
+      height: 100%;
+  }
+  
+}
+
+
+
+/* Mobile phones */
+
+@media only screen and (max-width: 600px) {
+
+
+  .hero-main-container {
+    background-image: url("../images/step1-mobile.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }  
+ 
+  .home-language-select-button {
+    bottom: 20vh;
+    right: 25vw;
+    width: 50vw;
+    height: 7vh;
+    position: fixed;
+    overflow-y: hidden;
+    text-align: center;
+  }
+
+  .proceed-button {
+    bottom: 10vh;
+    right: 25vw;
+    width: 50vw;
+    height: 7vh;
+    position: fixed;
+    overflow-y: hidden;
+  }
+
+  .slide-column-img {
+    height: 25vh;
+  }
+
+  .audio-section {
+    height: 3rem;
+  }
+
+
+  .parent-heading {
+      font-size: 1.2rem;
+      margin-top: 4%;
+  }
+
+
+  .slide-column-form-container {
+    background-image: url("../images/background-mobile.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 100%;
+  }
+
+  .footer-container-wrapper {
+      padding: 3%;
+      margin: 10% 0;
+  }
+
+  .footer-head {
+    font-size: 0.8rem !important;
+  }
+
+  .reg-language-select-button {
+    font-size: 0.8rem;
+    background-color: black;
+    height: 50%;
+    margin-right: 10px;
+  }
+
+  
+}
+
+  
+
+
+
+
+
+
+    

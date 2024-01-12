@@ -1,0 +1,123 @@
+*{
+  margin:0;
+}
+
+.rhap_container  {
+  background: none !important;
+  box-shadow: none;
+  height: 100%;
+  width: 100%;
+  padding-left: 3px;
+  padding-right: 0;
+}
+
+.rhap_main {
+  margin: 0;
+}
+
+.rhap_progress-section {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rhap_progress-container {
+  width: 80%;
+  margin: 0;
+}
+
+.rhap_time {
+  font-size: 14px;
+  color:white;
+  margin: 0;
+  width: 100%;
+}
+
+.rhap_play-pause-button {
+  margin: 0;
+  color: #ffffff; /* Change the color to your desired color */
+  font-size: 30px; /* Change the font size to your desired size */
+  /* Add any other custom styles you want for the play button */
+}
+
+.rhap_repeat-button {
+  display: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.rhap_volume-controls {
+  display: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.rhap_additional-controls {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/* -------------------Media Breakpoints------------------------- */
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .rhap_container {
+      height: 100%;
+  }
+
+
+  .rhap_main {
+    margin: 0;
+    position: relative;
+    bottom: 5px;
+  }
+  
+  .rhap_progress-container {
+      width: 60%;
+      margin: 0;
+  }
+
+  .rhap_progress-bar {
+      height: 4px;
+  }
+
+  .rhap_progress-indicator {
+      width: 10px;
+      height: 10px;
+      margin-left: 0px;
+      top: -3px;
+  }
+
+  .rhap_controls-section {
+    margin: 0;
+    padding: 0;
+  }
+    
+  .rhap_main-controls {
+      margin: 0;
+      padding: 0;
+  }
+
+  .rhap_button-clear {
+      padding: 0;
+  }
+  
+  .rhap_time {
+      font-size: 12px;
+      color:white;
+      margin: 2%;
+      width: 100%;
+  }
+    
+  .rhap_play-pause-button {
+      color: #ffffff; /* Change the color to your desired color */
+      font-size: 30px; /* Change the font size to your desired size */
+      /* Add any other custom styles you want for the play button */
+  }
+
+}
